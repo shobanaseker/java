@@ -6,17 +6,13 @@ public class CalendarSwitch {
 
 
                 case 1:
+                case 3:
                     for (date = 1; date <= 31; date++) {
                         System.out.println(year + " " + month + " " + date);
                     }
                     break;
                 case 2:
                     for (date = 1; date <= 28; date++) {
-                        System.out.println(year + " " + month + " " + date);
-                    }
-                    break;
-                case 3:
-                    for (date = 1; date <= 31; date++) {
                         System.out.println(year + " " + month + " " + date);
                     }
                     break;

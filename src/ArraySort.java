@@ -1,7 +1,7 @@
 public class ArraySort {
     public static void main(String[] args) {
+        int[] arr = {10, 50, 80, 30, 70, 20};
 
-        int[] arr = {22, 0, 1, 7, 10, 30, 22, 15, 28, 90};
         int temp;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {

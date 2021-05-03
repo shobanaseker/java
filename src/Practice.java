@@ -1,25 +1,12 @@
 public class Practice {
     public static void main(String[] args) {
-        String one = "hello";
-        String two = "world!";
-        //conCat(one, two);
-
-        String s1 = "hello";
-        String s2 = "hello";
-        // System.out.println(isEqual(s1, s2));
-
-        String s3 = "hoi";
-        String s4 = "hoj";
-        //compareTo(s3,s4);
-
-        String s5 = "hi";
-        // System.out.println(isEmpty(s5));
-
-        String s6 = "hello";
-        //replaceString(s6);
-
-        String s7 = "     hello hi     ";
-        trimString(s7);
+        String one = "Hello how are you";
+        char[] arr = one.toCharArray();
+        for (int i = 0; i < arr.length; i += 2) {
+            if (i == 'i') {
+                i = 'o';
+            }
+        }
     }
 
     public static void conCat(String ONE, String TWO) {
