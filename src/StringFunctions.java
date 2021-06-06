@@ -1,4 +1,4 @@
-public class Practice {
+public class StringFunctions {
     public static void main(String[] args) {
         String one = "Hello how are you";
         char[] arr = one.toCharArray();

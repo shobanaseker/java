@@ -4,8 +4,8 @@ public class StringAssignment {
         //CountWords();
         //Palindrome();
         //ArraySum();
-        //OddEven();
-        NumberToWords();
+        OddEven();
+        //NumberToWords();
 
     }
 

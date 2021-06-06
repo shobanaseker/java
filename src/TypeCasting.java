@@ -1,9 +1,13 @@
 public class TypeCasting {
     public static void main(String[] args) {
-        double d = 200.06d;
-        int number = (int) d;
-        System.out.println(number);
+        String a = "masai";
+        for (int i = 0; i < a.length(); i++) {
+            String count = "";
+            for (int j = i; j < a.length(); j++) {
+                count = count + a.charAt(j);
+                System.out.println(count);
+            }
+        }
     }
-
-
 }
+

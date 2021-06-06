@@ -1,18 +1,13 @@
-import java.util.Scanner;
-
 public class test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        function(num);
+        String a = "abcd";
+        for (int i = 0; i < a.length(); i++) {
+            char v = a.charAt(i);
+            int b = (122 - v) + 97;
+            char s = (char) b;
+            System.out.print(s + " ");
 
-
-    }
-
-    public static void function(int num) {
-        for (int i = 1; i <= num; i++) {
-            System.out.println("hello!");
         }
+
     }
 }
-

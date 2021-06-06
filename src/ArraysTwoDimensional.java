@@ -1,11 +1,12 @@
 public class ArraysTwoDimensional {
     public static void main(String[] args) {
-        //MatrixAdd();
+        // MatrixAdd();
         //Transpose();
-        //DiagonalDiff();
+        DiagonalDiff();
         //SubMatrix();
-        ColumnSum();
-
+        // ColumnSum();
+        //SubString();
+        //HumanReadable();
     }
 
     public static void MatrixAdd() {
@@ -19,6 +20,7 @@ public class ArraysTwoDimensional {
             System.out.println();
         }
     }
+
 
     public static void Transpose() {
         int[][] MatrixOne = {{1, 2, 3}, {4, 5, 6}};
@@ -73,14 +75,66 @@ public class ArraysTwoDimensional {
         }
     }
 
-    public static void Number() {
+    public static void SubString() {
         String a = "google";
-        String temp = "";
-        for (int i = 0; i < a.length(); i++) {
-            for (int j = i; j < a.length(); j++) {
+        String b = "ogl";
 
+        for (int i = 0; i < a.length(); i++) {
+            String temp = "";
+            for (int j = i; j < a.length(); j++) {
+                temp = temp + a.charAt(j);
+                if (b.equals(temp)) {
+                    System.out.println("True");
+                    break;
+                }
 
             }
+
+        }
+    }
+
+    public static void HumanReadable() {
+        String a = "2020-12-22";
+        String[] arr = a.split("-");
+        switch (Integer.valueOf(arr[1])) {
+            case 1:
+                System.out.println(arr[2] + " " + "January, " + arr[0]);
+                break;
+            case 2:
+                System.out.println(arr[2] + " " + "February, " + arr[0]);
+                break;
+            case 3:
+                System.out.println(arr[2] + " " + "March, " + arr[0]);
+                break;
+            case 4:
+                System.out.println(arr[2] + " " + "April, " + arr[0]);
+                break;
+            case 5:
+                System.out.println(arr[2] + " " + "May, " + arr[0]);
+                break;
+            case 6:
+                System.out.println(arr[2] + " " + "June, " + arr[0]);
+                break;
+            case 7:
+                System.out.println(arr[2] + " " + "July, " + arr[0]);
+                break;
+            case 8:
+                System.out.println(arr[2] + " " + "August, " + arr[0]);
+                break;
+            case 9:
+                System.out.println(arr[2] + " " + "September, " + arr[0]);
+                break;
+            case 10:
+                System.out.println(arr[2] + " " + "October, " + arr[0]);
+                break;
+            case 11:
+                System.out.println(arr[2] + " " + "November, " + arr[0]);
+                break;
+            case 12:
+                System.out.println(arr[2] + " " + "December, " + arr[0]);
+                break;
+
+
         }
     }
 
