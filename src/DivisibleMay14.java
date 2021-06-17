@@ -8,6 +8,7 @@ public class DivisibleMay14 {
             char i = sc.next().charAt(0);
             switch (i) {
                 case 'Y':
+                    System.out.println("enter number");
                     int n = sc.nextInt();
                     if (n % 5 == 0 && n % 7 == 0) {
                         System.out.println("Divisible by both the Numbers");

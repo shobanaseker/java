@@ -1,9 +1,9 @@
 public class PairsMay10 {
     public static void main(String[] args) {
         // Pair();
-        Maxoccuring();
+        //Maxoccuring();
         //CharacterOccurance();
-        //Unique();
+        uniqueValue();
     }
 
     public static void Pair() {
@@ -63,23 +63,28 @@ public class PairsMay10 {
 
     }
 
-    public static void Unique() {
-        int[] arr = {10, 20, 10, 30, 40};
-        int[] arr1 = new int[arr.length];
-        int k = 0;
-        boolean flag = true;
 
+    public static void uniqueValue() {
+        int[] arr = {10, 20, 30, 10, 40, -2, 30};
+        int[] val = new int[7];
+        int index = 0;
         for (int i = 0; i < arr.length; i++) {
-
+            int flag = 0;
             for (int j = 0; j < arr.length; j++) {
-                if ((arr[i] == arr[j]) && (i != j)) {
-                    flag = false;
-                    break;
+                if (i != j) {
+                    if (arr[i] == arr[j]) {
+                        flag = 1;
+                        break;
+                    }
                 }
             }
-            if (flag) {
-                System.out.println(arr[i]);
+            if (flag == 0) {
+                val[index] = arr[i];
+                index++;
             }
+        }
+        for (int i = 0; i < index; i++) {
+            System.out.println(val[i]);
         }
     }
 }
