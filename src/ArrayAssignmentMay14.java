@@ -2,9 +2,9 @@ public class ArrayAssignmentMay14 {
     public static void main(String[] args) {
 
         //MaxMin();
-        //SecondLargest();
+        SecondLargest();
         //Equillibrium();
-        MinArrayUpdateReq();
+        //MinArrayUpdateReq();
     }
 
     public static void MaxMin() {

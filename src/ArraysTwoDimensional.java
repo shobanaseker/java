@@ -1,8 +1,8 @@
 public class ArraysTwoDimensional {
     public static void main(String[] args) {
-        // MatrixAdd();
+         MatrixAdd();
         //Transpose();
-        DiagonalDiff();
+        //DiagonalDiff();
         //SubMatrix();
         // ColumnSum();
         //SubString();
